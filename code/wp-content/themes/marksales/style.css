@@ -1,0 +1,118 @@
+/*
+Theme Name: The Mark Sales
+Author: Verto
+Version: 1.0
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: #ababab;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 38px;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 18px;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 130px;
+	background: url('images/footer_background.gif') repeat-x;
+	clear: both;
+}
+
+#wrapper {
+	font-family: arial;
+	font-weight: normal;
+	color: #ababab;
+	width: 100%;
+	height: 100%;
+}
+
+#header_bar {
+	width: 100%;
+	height: 50px;
+	background: url('images/header_bar.gif') repeat-x;
+}
+
+#header, #content, #footer {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+#header {
+	height: 80px;
+	border-bottom: 1px solid #ababab;
+}
+
+#site_logo {
+	float: left;
+}
+#navigation {
+	float: right;
+}
+#navigation li {
+	display: inline;
+	list-style-type: none;
+	margin-left: 25px;
+}
+
+#footer {
+	padding-top: 40px;
+	font-size: 12px;
+}
+#social_icons {
+	float: left;
+	width: 300px;
+	word-spacing: 5px;
+}
+#social_icons #social_label {
+	float: left;
+	padding: 5px 10px 0px 0px;
+}
+#disclaimer {
+	float: right;
+	text-align: right;
+	line-height: 20px;
+}
+#navigation li, #disclaimer li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 7px;
+}
+
+#content {
+	height: 100%;
+	margin-bottom: -130px;
+	background: url('images/apple_product.gif') no-repeat;
+}
+#content #home_text {
+	float: right;
+	margin-top: 50px;
+	width: 300px;
+	line-height: 25px;
+}
+
+#sidebar {
+}
+
