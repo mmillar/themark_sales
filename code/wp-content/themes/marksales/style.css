@@ -4,6 +4,15 @@ Author: Verto
 Version: 1.0
 */
 
+@font-face {
+	font-family: helvetica_light_cond;
+	src: url('font/HelveticaNeue_LTStd.otf');
+}
+@font-face {
+	font-family: helvetica_bold_cond;
+	src: url('font/HelveticaNeueBoldCond.otf');
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -12,57 +21,66 @@ html, body {
 }
 
 a {
-	color: #ababab;
+	color: #7d7d7d;
 	text-decoration: none;
 }
 
-h1, h2, h3 {
-	font-weight: normal;
-}
 h1 {
+	font-family: helvetica_light_cond;
 	font-size: 38px;
+	color: #F59925;
 }
 h2 {
-	font-size: 22px;
+	font-family: helvetica_bold_cond;
+	font-size: 18px;
+	color: #252525;
 }
 h3 {
-	font-size: 18px;
+	font-family: helvetica_bold_cond;
+	font-size: 14px;
+	color: #7d7d7d;
 }
 
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 130px;
-	background: url('images/footer_background.gif') repeat-x;
-	clear: both;
+.before_header {
+	border-bottom: 1px solid #F59925;
+	float: left;
+	width: 65px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+.bg {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e6e6e6));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #e6e6e6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#e6e6e6');
+	border: 1px solid #bdbdbd;
 }
 
 #wrapper {
-	font-family: arial;
-	font-weight: normal;
-	color: #ababab;
+	font-family: helvetica_light_cond;
+	font-size: 14px;
+	color: #7d7d7d;
 	width: 100%;
 	height: 100%;
 }
+
+#header, #content, #footer {
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+/* header */
 
 #header_bar {
 	width: 100%;
 	height: 50px;
 	background: url('images/header_bar.gif') repeat-x;
 }
-
-#header, #content, #footer {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-}
-
 #header {
-	height: 80px;
-	border-bottom: 1px solid #ababab;
+	height: 70px;
+	border-bottom: 1px solid #dcdcdc;
 }
 
 #site_logo {
@@ -77,8 +95,27 @@ footer {
 	margin-left: 25px;
 }
 
+/* content */
+
+#content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#sidebar {
+}
+
+/* footer */
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 130px;
+	background: url('images/footer_background.gif') repeat-x;
+	clear: both;
+}
 #footer {
-	padding-top: 40px;
+	padding-top: 30px;
 	font-size: 12px;
 }
 #social_icons {
@@ -88,12 +125,12 @@ footer {
 }
 #social_icons #social_label {
 	float: left;
-	padding: 5px 10px 0px 0px;
+	padding: 10px 10px 0px 0px;
 }
 #disclaimer {
 	float: right;
 	text-align: right;
-	line-height: 20px;
+	line-height: 5px;
 }
 #navigation li, #disclaimer li {
 	display: inline;
@@ -101,18 +138,147 @@ footer {
 	padding-left: 7px;
 }
 
-#content {
-	height: 100%;
-	margin-bottom: -130px;
+
+/* Home page */
+
+#home_image {
+	width: 100%;
+	min-height: 540px;
 	background: url('images/apple_product.gif') no-repeat;
 }
-#content #home_text {
+#home_text {
+	font-size: 25px;
 	float: right;
 	margin-top: 50px;
+	width: 390px;
+	line-height: 40px;
+}
+#home_text span {
+	color: #F59925;
+	font-family: helvetica_bold_cond;
+}
+.home_image {
+	clear: both;
+	margin-top: 20px;
+}
+
+
+/* What We Do page */
+
+iframe {
+	max-width: 460px;
+	max-height: 275px;
+	float: left;
+	margin-bottom: 30px;
+}
+#what_we_do {
+	float: right;
+	width: 370px;
+	padding-top: 50px;
+	font-size: 21px;
+	line-height: 30px;
+}
+
+/* Who We Are page */
+
+#team, #board {
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 81%;
+	text-align: center;
+}
+#team h3, #board h3 {
+	margin: 0;
+}
+
+.row {
+	width: 100%;
+	display: table-row;
+}
+.row .team_member, .row .board_member {
+	display: table-cell;
+	padding-bottom: 20px;
+}
+.row .team_member {
+	width: 138px;
+}
+.row .board_member {
+	width: 330px;
+}
+
+#contact h1 {
+	margin-bottom: 5px;
+}
+#contact p {
+	margin: 0px 0px 20px 80px;
+	color: #acacac;
+	font-size: 38px;
+}
+#contact img {
+	margin-right: 10px;
+}
+
+/* What's Next page */
+
+.section {
 	width: 300px;
-	line-height: 25px;
+	height: 100px;
+	margin-bottom: 30px;
+}
+#foot, #health {
+	float: left;
+	margin-left: 110px;
+}
+#studio, #home_garden {
+	float: right;
+	margin-right: 110px;
 }
 
-#sidebar {
+.section img {
+	float: left;
+	margin: 15px 15px 0 15px;
+}
+.section h2 {
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 
+/* Past Events page */
+
+.event_section {
+	width: 300px;
+	height: 320px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#health_series, #automotive {
+	float: left;
+	margin-left: 110px;
+}
+#small_business, #studio_series {
+	float: right;
+	margin-right: 110px;
+}
+
+.event_section h2 {
+	margin-bottom: 0;
+}
+.event_section h3 {
+	margin: 0;
+	padding-top: 7px;
+}
+.event_section h3.featuring {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+
+.event_section .event_row {
+	text-align: left;
+	height: 75px;
+}
+.event_section .event_row img {
+	float: left;
+	margin: 0 10px;
+}

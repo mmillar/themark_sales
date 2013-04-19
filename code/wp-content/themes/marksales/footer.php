@@ -9,9 +9,9 @@
 		  <div id="disclaimer">
 		  	<img src="<?php bloginfo('stylesheet_directory')?>/images/site_logo_mini.gif"><br>
 		  	<ul>
-		  		<li>TERMS &#38; CONDITIONS</li>
+		  		<li><a href="#">TERMS &#38; CONDITIONS</a></li>
 		  		<li>|</li>
-		  		<li>PRIVACY POLICY</li>
+		  		<li><a href="#">PRIVACY POLICY</a></li>
 		  </div>
 		</div>
 	</footer>
