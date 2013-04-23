@@ -5,6 +5,7 @@
 	<meta charset="<?php bloginfo('charset') ?>">
 	<title><?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" type="text/css"  href="<?php bloginfo('stylesheet_url') ?>" media="all">
+	<link rel="stylesheet" type="text/css"  href="./style.css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/style.js"></script>
 </head>
