@@ -13,5 +13,5 @@ function resize_body() {
 	$tmp = $(window).height() - $("#header_bar").height() - $("#header").height() - $("footer").height() - 61;
 	if($("#content").height() < $tmp)
 		$("#content").height( $tmp );
-
+	console.log($("footer").height());
 }
