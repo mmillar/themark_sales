@@ -117,6 +117,7 @@ footer {
 	height: 130px;
 	background: url('images/footer_background.gif') repeat-x;
 	clear: both;
+	display: block;
 }
 #footer {
 	padding-top: 30px;

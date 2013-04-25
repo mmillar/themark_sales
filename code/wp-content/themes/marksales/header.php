@@ -4,6 +4,9 @@
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<title><?php bloginfo('name'); ?></title>
+	<!--[if lt IE 9]>
+	<script src="<?php bloginfo('template_url') ?>/js/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
 	<link rel="stylesheet" type="text/css"  href="<?php bloginfo('stylesheet_url') ?>" media="all">
 	<link rel="stylesheet" type="text/css"  href="./style.css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>

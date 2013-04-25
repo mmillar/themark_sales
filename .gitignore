@@ -1,2 +1,4 @@
 *.log
 *.DS_Store
+*.htaccess
+code/wp-config.php
