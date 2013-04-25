@@ -27,7 +27,7 @@
 				</div>
 				<div class="team_member">
 					<h3>Sean Liliani</h3>
-					Video Producer
+					Director, Video
 				</div>
 			</div>
 		</div>
