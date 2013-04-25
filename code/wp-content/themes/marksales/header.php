@@ -30,6 +30,7 @@
 	  				<li><a <?php if($post->ID == 7) echo 'style="color:#F59925"' ?> href="?page_id=7">Past Events</a></li>
 	  				<li><a <?php if($post->ID == 9) echo 'style="color:#F59925"' ?> href="?page_id=9">What's Next</a></li>
 	  				<li><a <?php if($post->ID == 11) echo 'style="color:#F59925"' ?> href="?page_id=11">Who We Are</a></li>
+	  			</ul>
 	  		</div>
 	  	</div>
 	  </header>
