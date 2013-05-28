@@ -5,10 +5,11 @@
 <?php get_header(); ?>
     
 	<div id="content">
-		<iframe width="560" height="315" src="http://www.youtube.com/embed/T6DJcgm3wNY" frameborder="0" allowfullscreen></iframe>
-		<div id="what_we_do">
-			The Mark Live produces Live conversations with celebrities and newsmakers, and Syndicates these conversations out to partners across all digital platforms.
-		</div>
+    <div id="what_we_do_image">
+  		<div id="what_we_do">
+  			The Mark Live produces virtual conversations between <span>celebrities and their audiences</span> in the websites and Facebook pages of media, academic, corporate, and non-governmental organizations worldwide with combined audiences of 50+ million.
+  		</div>
+    </div>
 	</div>
 
 <?php get_footer(); ?>

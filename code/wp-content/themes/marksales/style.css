@@ -54,10 +54,8 @@ h3 {
 }
 
 .bg {
-	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e6e6e6));
-	background: -moz-linear-gradient(top,  #f5f5f5,  #e6e6e6);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#e6e6e6');
 	border: 1px solid #bdbdbd;
+	box-shadow: 0 1px 1px;
 }
 
 #wrapper {
@@ -69,7 +67,7 @@ h3 {
 }
 
 #header, #content, #footer {
-	width: 860px;
+	width: 940px;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -96,7 +94,7 @@ h3 {
 #navigation li {
 	display: inline;
 	list-style-type: none;
-	margin-left: 25px;
+	margin-left: 45px;
 }
 
 /* content */
@@ -148,16 +146,17 @@ footer {
 #home_image {
 	width: 100%;
 	min-height: 540px;
-	background: url('images/apple_product.gif') no-repeat;
+	background: url('images/apple_monitor.png') no-repeat;
+	background-size: 55%;
 }
 #home_text {
 	font-size: 25px;
 	float: right;
 	margin-top: 50px;
-	width: 390px;
+	width: 405px;
 	line-height: 40px;
 }
-#home_text span {
+#home_text div {
 	color: #F59925;
 	font-family: helvetica_bold_cond;
 }
@@ -168,19 +167,22 @@ footer {
 
 
 /* What We Do page */
-
-iframe {
-	max-width: 460px;
-	max-height: 275px;
-	float: left;
-	margin-bottom: 30px;
+#what_we_do_image {
+	width: 100%;
+	min-height: 540px;
+	background: url('images/apple_iphone_tablet.png') no-repeat;
+	background-position: 0 40px;
 }
 #what_we_do {
 	float: right;
-	width: 370px;
+	width: 405px;
 	padding-top: 50px;
 	font-size: 21px;
 	line-height: 30px;
+}
+#what_we_do span {
+	color: #F59925;
+	font-family: helvetica_bold_cond;
 }
 
 /* Who We Are page */
@@ -230,11 +232,11 @@ iframe {
 	height: 100px;
 	margin-bottom: 30px;
 }
-#foot, #health {
+.section#foot, .section#health {
 	float: left;
 	margin-left: 110px;
 }
-#studio, #home_garden {
+.section#studio, .section#home_garden {
 	float: right;
 	margin-right: 110px;
 }
@@ -252,17 +254,17 @@ iframe {
 
 .event_section {
 	width: 300px;
-	height: 320px;
+	height: 225px;
 	margin-bottom: 30px;
 	text-align: center;
 }
-#health_series, #automotive {
+.event_section#music, .event_section#automotive {
 	float: left;
-	margin-left: 110px;
+	margin-left: 140px;
 }
-#small_business, #studio_series {
+.event_section#real_estate, .event_section#health {
 	float: right;
-	margin-right: 110px;
+	margin-right: 140px;
 }
 
 .event_section h2 {
@@ -285,4 +287,13 @@ iframe {
 .event_section .event_row img {
 	float: left;
 	margin: 0 10px;
+}
+
+/* Unlisted Page */
+#unlisted {
+	text-align: center;
+}
+iframe {
+	width: 80%;
+	min-height: 540px;
 }
