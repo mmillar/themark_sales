@@ -1,22 +1,5 @@
 	<footer>
-		<div id="footer">
-		  <div id="social_icons">
-		  	<!--<div id="social_label">Share</div>
-		  	<img src="<?php bloginfo('stylesheet_directory')?>/images/twitter_icon_2.gif">
-		  	<img src="<?php bloginfo('stylesheet_directory')?>/images/facebook_icon.gif">
-		  	<img src="<?php bloginfo('stylesheet_directory')?>/images/twitter_icon.gif">-->
-		  </div>
-		  <div id="disclaimer">
-		  	<img src="<?php bloginfo('stylesheet_directory')?>/images/site_logo_mini.gif"><br>
-		  	<!--
-		  	<ul>
-		  		<li><a href="#">TERMS &#38; CONDITIONS</a></li>
-		  		<li>|</li>
-		  		<li><a href="#">PRIVACY POLICY</a></li>
-		  	</ul>
-		  	-->
-		  </div>
-		</div>
+		<div id="footer">Want to reach our audience? <a href="?page_id=5" class="yellow">Get in touch.</a></div>
 	</footer>
 
 </div>

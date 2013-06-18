@@ -4,15 +4,6 @@ Author: Verto
 Version: 1.0
 */
 
-@font-face {
-	font-family: helvetica_light_cond;
-	src: url('font/HelveticaNeue_LTStd.otf');
-}
-@font-face {
-	font-family: helvetica_bold_cond;
-	src: url('font/HelveticaNeueBoldCond.otf');
-}
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -24,269 +15,244 @@ img {
 	border-width: 0; /* For IE */
 }
 
+.yellow {
+	color: #ff0;
+}
+
 a {
-	color: #7d7d7d;
+	color: #fff;
+	font-weight: 400;
 	text-decoration: none;
 }
-
-h1 {
-	font-family: helvetica_light_cond;
-	font-size: 38px;
-	color: #F59925;
-}
-h2 {
-	font-family: helvetica_bold_cond;
-	font-size: 18px;
-	color: #252525;
-}
-h3 {
-	font-family: helvetica_bold_cond;
-	font-size: 14px;
-	color: #7d7d7d;
-}
-
-.before_header {
-	border-bottom: 1px solid #F59925;
-	float: left;
-	width: 65px;
-	height: 15px;
-	margin-right: 15px;
-}
-
-.bg {
-	border: 1px solid #bdbdbd;
-	box-shadow: 0 1px 1px;
+a.active {
+	color: #ff0;
+	font-weight: 700;
 }
 
 #wrapper {
-	font-family: helvetica_light_cond;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	font-size: 14px;
-	color: #7d7d7d;
+	color: #fff;
 	width: 100%;
 	height: 100%;
 }
 
 #header, #content, #footer {
-	width: 940px;
+	width: 1088px;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
 }
 
 /* header */
-
-#header_bar {
-	width: 100%;
-	height: 50px;
-	background: url('images/header_bar.gif') repeat-x;
-}
 #header {
-	height: 70px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	background: url('images/header.png') no-repeat;
 	border-bottom: 1px solid #dcdcdc;
+	text-align: center;
 }
-
-#site_logo {
-	float: left;
+#site_logo {	
 }
-#navigation {
-	float: right;
+#navigation ul {
+	text-align: left;
 }
 #navigation li {
 	display: inline;
 	list-style-type: none;
 	margin-left: 45px;
 }
-
-/* content */
-
-#content {
-	margin-top: 30px;
-	margin-bottom: 30px;
+#navigation li a:hover {
+	text-shadow: -1px 1px 3px #ff0;
+}
+#navigation li img {
+	vertical-align: top;
 }
 
-#sidebar {
+/* content */
+#content {
+	background-color: #321846;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 /* footer */
 footer {
-	left: 0;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 130px;
-	background: url('images/footer_background.gif') repeat-x;
-	clear: both;
 }
 #footer {
-	padding-top: 30px;
-	font-size: 12px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 16px;
+	background: url('images/footer.png') no-repeat;
+	border-top: 1px solid #dcdcdc;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-#social_icons {
-	float: left;
-	width: 300px;
-	word-spacing: 5px;
+#footer .yellow {
+	font-weight: 900;
+	color: #ff0;
 }
-#social_icons #social_label {
-	float: left;
-	padding: 10px 10px 0px 0px;
+#footer a {
+	text-decoration: underline;
 }
-#disclaimer {
-	float: right;
-	text-align: right;
-	line-height: 5px;
-}
-#navigation li, #disclaimer li {
-	display: inline;
-	list-style-type: none;
-	padding-left: 7px;
-}
-
-
-/* Home page */
-
-#home_image {
-	width: 100%;
-	min-height: 540px;
-	background: url('images/apple_monitor.png') no-repeat;
-	background-size: 55%;
-}
-#home_text {
-	font-size: 25px;
-	float: right;
-	margin-top: 50px;
-	width: 405px;
-	line-height: 40px;
-}
-#home_text div {
-	color: #F59925;
-	font-family: helvetica_bold_cond;
-}
-.home_image {
-	clear: both;
-	margin-top: 20px;
-}
-
 
 /* What We Do page */
-#what_we_do_image {
+#what-we-do-image {
 	width: 100%;
-	min-height: 540px;
-	background: url('images/apple_iphone_tablet.png') no-repeat;
-	background-position: 0 40px;
+	min-height: 417px;
+	background: url('images/apple_products.png') no-repeat right;
 }
-#what_we_do {
-	float: right;
-	width: 405px;
-	padding-top: 50px;
-	font-size: 21px;
-	line-height: 30px;
+#what-we-do-text {
+	width: 18.5%;
+	font-size: 14px;
+	font-weight: 300;
+	padding-left: 3em;
+	padding-top: 2em;
 }
-#what_we_do span {
-	color: #F59925;
-	font-family: helvetica_bold_cond;
-}
-
-/* Who We Are page */
-
-#team, #board {
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 81%;
-	text-align: center;
-}
-#team h3, #board h3 {
-	margin: 0;
-}
-
-.row {
-	width: 100%;
-	display: table-row;
-}
-.row .team_member, .row .board_member {
-	display: table-cell;
-	padding-bottom: 20px;
-}
-.row .team_member {
-	width: 138px;
-}
-.row .board_member {
-	width: 330px;
-}
-
-#contact h1 {
-	margin-bottom: 5px;
-}
-#contact p {
-	margin: 0px 0px 20px 80px;
-	color: #acacac;
-	font-size: 19px;
-}
-#contact img {
-	margin-right: 5px;
-}
-
-/* What's Next page */
-
-.section {
-	width: 300px;
-	height: 100px;
-	margin-bottom: 30px;
-}
-.section#foot, .section#health {
-	float: left;
-	margin-left: 110px;
-}
-.section#studio, .section#home_garden {
-	float: right;
-	margin-right: 110px;
-}
-
-.section img {
-	float: left;
-	margin: 15px 15px 0 15px;
-}
-.section h2 {
-	margin-top: 30px;
-	margin-bottom: 0;
+#what-we-do-text div {
+	width: 90%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding-bottom: 1em;
 }
 
 /* Past Events page */
-
-.event_section {
-	width: 300px;
-	height: 225px;
-	margin-bottom: 30px;
+table#past-events {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+table#past-events td {
+	width: 25%;
 	text-align: center;
 }
-.event_section#music, .event_section#automotive {
-	float: left;
-	margin-left: 140px;
+table#past-events td:not(:last-child) {
+	border-right: 1px solid #dcdcdc;
 }
-.event_section#real_estate, .event_section#health {
-	float: right;
-	margin-right: 140px;
+#past-events-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #ff0;
+}
+#past-events-subtitle {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 10px;
+}
+#past-events-name {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #ff0;
+}
+#past-events-intro {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	padding-bottom: 20px;
 }
 
-.event_section h2 {
-	margin-bottom: 0;
+/* Upcoming Events page */
+.three#upcoming-events-section table {
+	width: 80%;
 }
-.event_section h3 {
-	margin: 0;
-	padding-top: 7px;
+.two#upcoming-events-section table {
+	width: 60%;
 }
-.event_section h3.featuring {
-	margin-bottom: 10px;
-	padding: 0;
+#upcoming-events-section table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#upcoming-events-section table td {
+	padding-bottom: 5em;
+}
+#upcoming-events-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #ff0;
+}
+#upcoming-events-subtitle {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
 }
 
-
-.event_section .event_row {
-	text-align: left;
-	height: 75px;
+/* Who We Are page */
+#who-we-are-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #ff0;
+	text-align: center;
+	margin-bottom: 1em;
 }
-.event_section .event_row img {
-	float: left;
-	margin: 0 10px;
+#who-we-are-section table {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#who-we-are-section table td {
+	width: 33%;
+}
+#who-we-are-name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: #ff0;
+}
+#who-we-are-info {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	padding-bottom: 2em;
+}
+
+/* Contact page */
+#contact-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #ff0;
+	text-align: center;
+	margin-bottom: 1em;
+}
+#contact-section table {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#contact-section table td {
+	width: 20%;
+	vertical-align: top;
+}
+#contact-section table td.left {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+#contact-heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: #ff0;
+}
+#contact-text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	padding-bottom: 1em;
 }
 
 /* Unlisted Page */

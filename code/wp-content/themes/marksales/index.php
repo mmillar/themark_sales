@@ -1,11 +1,11 @@
 <?php get_header(); ?>
     
 	<div id="content">
-		<div id="home_image">
-			<div id="home_text">
-				<div>Live-streamed interactive conversations</div>
-        between celebrities and fans worldwide
-				<a href="?page_id=5"><img class="home_image" style="cursor:pointer" src="<?php bloginfo('stylesheet_directory')?>/images/see_more.gif"></a>
+		<div id="what-we-do-image">
+			<div id="what-we-do-text">
+				<div>LIVE-STREAMED INTERACTIVE CONVERSATIONS BETWEEN CELEBRITIES AND FANS WORLDWIDE</div>
+        The Mark Live produces virtual conversations between <span class="yellow">celebrities and their audiences</span> in websites and Facebook 
+pages worldwide with combined audiences of 50+ million.
 			</div>
 		</div>
 	</div>
