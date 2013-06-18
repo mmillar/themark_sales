@@ -26,7 +26,7 @@
 					<div id="who-we-are-info">President, S&E<br />Sponsorship Group</div>
 				</td>
 				<td>
-					<div id="who-we-are-name">Edward Greenspoon</div>
+					<div id="who-we-are-name">Edward Greenspon</div>
 					<div id="who-we-are-info">Former Editor-in-Chief,<br />The Globe & Mail</div>
 				</td>
 				<td>

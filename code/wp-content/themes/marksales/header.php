@@ -28,7 +28,6 @@
 	  				<li><a <?php if($post->ID == 9) echo 'class="active"' ?> href="?page_id=9">UPCOMING EVENTS</a></li>
 	  				<li><a <?php if($post->ID == 11) echo 'class="active"' ?> href="?page_id=11">WHO WE ARE</a></li>
 	  				<li><a <?php if($post->ID == 5) echo 'class="active"' ?> href="?page_id=5">CONTACT</a></li>
-	  				<li><a href="#"><img src="<?php bloginfo('template_url') ?>/images/social_icons.png" /> SHARE</a></li>
 	  			</ul>
 	  		</div>
 	  	</div>
