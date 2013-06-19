@@ -55,7 +55,8 @@ a.active {
 	border-bottom: 1px solid #dcdcdc;
 	text-align: center;
 }
-#site_logo {	
+#header-current-page {
+	display: none;	
 }
 #navigation ul {
 	text-align: center;
@@ -108,6 +109,7 @@ footer {
 	background: url('images/apple_products.png') no-repeat right;
 }
 #what-we-do-text {
+	font-family: 'Roboto', sans-serif;
 	width: 18.5%;
 	font-size: 14px;
 	font-weight: 300;
@@ -123,17 +125,12 @@ footer {
 }
 
 /* Past Events page */
-table#past-events {
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
-	border-collapse: collapse;
-}
-table#past-events td {
-	width: 25%;
+#past-events {
+	width: 24.5%;
 	text-align: center;
+	float: left;
 }
-table#past-events td:not(:last-child) {
+#past-events:not(:last-child) {
 	border-right: 1px solid #dcdcdc;
 }
 #past-events-title {
@@ -146,6 +143,7 @@ table#past-events td:not(:last-child) {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 10px;
+	padding-bottom: 1em;
 }
 #past-events-name {
 	font-family: 'Roboto', sans-serif;
@@ -161,19 +159,26 @@ table#past-events td:not(:last-child) {
 }
 
 /* Upcoming Events page */
-.three#upcoming-events-section table {
-	width: 80%;
-}
-.two#upcoming-events-section table {
-	width: 60%;
-}
-#upcoming-events-section table {
+#upcoming-events {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 5em;
+}
+.three#upcoming-events {
+	width: 80%;
+}
+.two#upcoming-events {
+	width: 60%;
+}
+#upcoming-events-section {
+	float: left;
 	text-align: center;
 }
-#upcoming-events-section table td {
-	padding-bottom: 5em;
+.three#upcoming-events #upcoming-events-section {
+	width: 33%;
+}
+.two#upcoming-events #upcoming-events-section {
+	width: 50%;
 }
 #upcoming-events-title {
 	font-family: 'Montserrat', sans-serif;
@@ -196,13 +201,14 @@ table#past-events td:not(:last-child) {
 	text-align: center;
 	margin-bottom: 1em;
 }
-#who-we-are-section table {
-	width: 70%;
+#who-we-are {
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 }
-#who-we-are-section table td {
+#who-we-are-section {
+	float: left;
+	text-align: center;
 	width: 33%;
 }
 #who-we-are-name {
@@ -227,17 +233,18 @@ table#past-events td:not(:last-child) {
 	text-align: center;
 	margin-bottom: 1em;
 }
-#contact-section table {
-	width: 70%;
+#contact-section {
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
-#contact-section table td {
-	width: 20%;
+#contact-entry {
+	float: left;
+	width: 33%;
 	vertical-align: top;
 }
-#contact-section table td.left {
+#contact-entry.left {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
@@ -262,4 +269,140 @@ table#past-events td:not(:last-child) {
 iframe {
 	width: 80%;
 	min-height: 540px;
+}
+
+#nav-icon {
+	display: none;
+}
+a:hover#nav-icon {
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+}
+
+/* MOBILE */
+@media only screen and (max-width : 640px) {
+	/* navigation */
+	#navigation {
+		font-size: 20px;
+		border-top: 1px solid #dcdcdc;
+		padding: 5px 0;
+		text-align: center;
+		cursor: pointer;
+	}
+	#navigation.inactive {
+		background: #000 url('images/nav-icon-inactive.png') right 7px top 7px no-repeat;
+	}
+	#navigation.active {
+		background: #000 url('images/nav-icon-active.png') right 3px top 3px no-repeat;	
+	}
+	#navigation ul, #navigation:active ul { 
+		display: none;
+	}
+	#navigation ul {
+		-webkit-margin-after: 0;
+	}
+	#navigation li {
+		text-align: center;
+		display: block;
+		border-top: 1px solid #dcdcdc;
+		margin-left: 0;
+	}
+	#header-current-page {
+		display: inline;
+	}
+
+	/* footer */
+	footer {
+		position: relative;
+	}
+	#footer {
+		background: #000;
+	}
+
+	/* What We Do page */
+	#what-we-do-image {
+		background: url('images/apple_products.png') no-repeat top;
+	}
+	#what-we-do-text {
+		width: 90%;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 417px;
+	}
+
+	/* Past Events page */
+	#past-events {
+		float: none;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#past-events:not(:last-child) {
+		border: none;
+	}
+	#past-events-subtitle {
+		font-size: 18px;
+	}
+	#past-events-name {
+		font-size: 20px;
+	}
+	#past-events-intro {
+		font-size: 18px;
+	}
+
+	/* Upcoming Events page */
+	.two#upcoming-events, .three#upcoming-events {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+	#upcoming-events-section {
+		float: none;
+		margin-bottom: 2em;
+	}
+	.two#upcoming-events #upcoming-events-section, .three#upcoming-events #upcoming-events-section {
+		width: 100%;
+	}
+	#upcoming-events-subtitle {
+		font-size: 18px;
+	}
+
+	/* Who We Are page */
+	#who-we-are {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#who-we-are-section {
+		width: 100%;
+		float: none;
+	}
+	#who-we-are-name {
+		font-size: 20px;
+	}
+	#who-we-are-info {
+		font-size: 18px;
+	}
+
+	/* Contact page */
+	#contact-section {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#contact-entry {
+		width: 100%;
+		float: none;
+		margin-bottom: 2em;
+	}
+	#contact-entry.left {
+		font-size: 20px;
+	}
+	#contact-heading {
+		font-size: 20px;
+	}
+	#contact-text {
+		font-size: 18px;
+	}
 }

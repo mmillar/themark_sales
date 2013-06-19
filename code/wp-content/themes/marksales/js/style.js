@@ -5,7 +5,17 @@ $(function() {
 
 	$(window).resize(function() {
 		resize_body();
-	})
+	});
+
+	$('#navigation').click(function() {
+		if ($(this).find('ul').css('display') == 'none') {
+			$(this).find('ul').css('display', 'inline');
+			$(this).attr('class', 'active');
+		} else {
+			$(this).find('ul').css('display', 'none');
+			$(this).attr('class', 'inactive');
+		}
+	});
 });
 
 function resize_body() {
