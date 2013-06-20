@@ -280,7 +280,23 @@ a:hover#nav-icon {
 }
 
 /* MOBILE */
-@media only screen and (max-width : 640px) {
+@media screen and (max-width : 480px) {
+	html {
+		max-width: 480px;
+	}
+	body {
+		width: 100%;
+	}
+	img {
+		max-width: 100%;
+	}
+	#header, #content, #footer {
+		max-width: 480px;
+	}
+	#header {
+		background: url('images/header.png') top no-repeat;
+	}
+
 	/* navigation */
 	#navigation {
 		font-size: 20px;
@@ -322,12 +338,18 @@ a:hover#nav-icon {
 	/* What We Do page */
 	#what-we-do-image {
 		background: url('images/apple_products.png') no-repeat top;
+		background-size: 480px 261px;
+		min-height: 261px;
+	}
+	#what-we-do-text div {
+		width: 100%;
 	}
 	#what-we-do-text {
-		width: 90%;
+		width: 100%;
 		font-size: 18px;
 		text-align: center;
-		padding-top: 417px;
+		padding-top: 261px;
+		padding-left: 0;
 	}
 
 	/* Past Events page */
