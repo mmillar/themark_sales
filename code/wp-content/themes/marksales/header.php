@@ -6,7 +6,6 @@
 	<title><?php bloginfo('name'); ?></title>
 	<link rel="icon" type="image/jpg" href="<?php bloginfo('template_url') ?>/images/favicon.jpg">
 	<link rel="stylesheet" type="text/css"  href="<?php bloginfo('stylesheet_url') ?>" media="all">
-	<link rel="stylesheet" type="text/css"  href="./style.css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/style.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -23,6 +22,7 @@
 	  			<a href="<?php bloginfo('siteurl') ?>"><img src="<?php bloginfo('stylesheet_directory') ?>/images/site_logo.png"></a>
 	  		</div>
 	  		<div id="navigation" class="inactive">
+	  			<input type="hidden" name="mobile" value="">
 	  			<?php if($post->ID == 1) { ?><span class="yellow" id="header-current-page">WHAT WE DO</span><?php } ?>
 	  			<?php if($post->ID == 7) { ?><span class="yellow" id="header-current-page">PAST EVENTS</span><?php } ?>
 	  			<?php if($post->ID == 9) { ?><span class="yellow" id="header-current-page">UPCOMING EVENTS</span><?php } ?>

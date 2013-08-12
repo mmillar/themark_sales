@@ -104,17 +104,18 @@ footer {
 
 /* What We Do page */
 #what-we-do-image {
-	width: 100%;
+	width: 77%;
 	min-height: 417px;
-	background: url('images/apple_products.png') no-repeat right;
+	float: right;
+	text-align: right;
 }
 #what-we-do-text {
 	font-family: 'Roboto', sans-serif;
-	width: 18.5%;
+	width: 21%;
 	font-size: 14px;
 	font-weight: 300;
-	padding-left: 3em;
-	padding-top: 2em;
+	padding: 1%;
+	float: left;
 }
 #what-we-do-text div {
 	width: 90%;
@@ -281,18 +282,20 @@ a:hover#nav-icon {
 
 /* MOBILE */
 @media screen and (max-width : 480px) {
-	html {
-		max-width: 480px;
-	}
-	body {
-		width: 100%;
-	}
-	img {
-		max-width: 100%;
-	}
+	html, body, #wrapper {
+    min-width: 320px;
+    max-width: 480px;
+  }
+  img {
+    max-width: 100%;
+  }
 	#header, #content, #footer {
-		max-width: 480px;
-	}
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Header */
 	#header {
 		background: url('images/header.png') top no-repeat;
 	}
@@ -337,19 +340,20 @@ a:hover#nav-icon {
 
 	/* What We Do page */
 	#what-we-do-image {
-		background: url('images/apple_products.png') no-repeat top;
-		background-size: 480px 261px;
-		min-height: 261px;
+		min-height: 0;
+		width: 98%;
+		padding: 1%;
+		float: none;
+		text-align: center;
 	}
 	#what-we-do-text div {
 		width: 100%;
 	}
 	#what-we-do-text {
-		width: 100%;
+		width: 98%;
 		font-size: 18px;
 		text-align: center;
-		padding-top: 261px;
-		padding-left: 0;
+		padding-bottom: 1em;
 	}
 
 	/* Past Events page */
