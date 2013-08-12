@@ -309,10 +309,16 @@ a:hover#nav-icon {
 		cursor: pointer;
 	}
 	#navigation.inactive {
-		background: #000 url('images/nav-icon-inactive.png') right 7px top 7px no-repeat;
+		background-color: #000;
+		background-image: url('images/nav-icon-inactive.png');
+		background-position: 97% 50%;
+		background-repeat: no-repeat;
 	}
 	#navigation.active {
-		background: #000 url('images/nav-icon-active.png') right 3px top 3px no-repeat;	
+		background-color: #000;
+		background-image: url('images/nav-icon-active.png');
+		background-position: 98% 5px;
+		background-repeat: no-repeat;	
 	}
 	#navigation ul, #navigation:active ul { 
 		display: none;
