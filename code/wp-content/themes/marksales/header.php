@@ -23,11 +23,16 @@
 	  		</div>
 	  		<div id="navigation" class="inactive">
 	  			<input type="hidden" name="mobile" value="">
-	  			<?php if($post->ID == 1) { ?><span class="yellow" id="header-current-page">WHAT WE DO</span><?php } ?>
-	  			<?php if($post->ID == 7) { ?><span class="yellow" id="header-current-page">PAST EVENTS</span><?php } ?>
-	  			<?php if($post->ID == 9) { ?><span class="yellow" id="header-current-page">UPCOMING EVENTS</span><?php } ?>
-	  			<?php if($post->ID == 11) { ?><span class="yellow" id="header-current-page">WHO WE ARE</span><?php } ?>
-	  			<?php if($post->ID == 5) { ?><span class="yellow" id="header-current-page">CONTACT</span><?php } ?>
+	  			<span class="yellow" id="header-current-page">
+		  			<?php 
+		  				if ($post->ID == 1) { echo "WHAT WE DO"; }
+		  				elseif ($post->ID == 7) { echo "PAST EVENTS"; }
+		  				elseif ($post->ID == 9) { echo "UPCOMING EVENTS"; }
+		  				elseif ($post->ID == 11) { echo "WHO WE ARE"; }
+		  				elseif ($post->ID == 5) { echo "CONTACT"; }
+		  				else { echo strtoupper(wp_title('', false, '')); }
+		  			?>
+	  			</span>
 	  			<ul>
 	  				<li><a <?php if($post->ID == 1) echo 'class="active"' ?> href="<?php bloginfo('siteurl') ?>">WHAT WE DO</a></li>
 	  				<li><a <?php if($post->ID == 7) echo 'class="active"' ?> href="?page_id=7">PAST EVENTS</a></li>
