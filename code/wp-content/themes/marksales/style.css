@@ -281,7 +281,7 @@ a:hover#nav-icon {
 }
 
 /* MOBILE */
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 480px), screen and (device-aspect-ratio : 40/71) {
 	html, body, #wrapper {
     min-width: 320px;
     max-width: 480px;
@@ -437,4 +437,14 @@ a:hover#nav-icon {
 	#contact-text {
 		font-size: 18px;
 	}
+}
+
+@media screen and (device-aspect-ratio : 40/71) and (orientation : landscape) {
+  html, body, #wrapper {
+    min-width: 480px;
+    max-width: 1136px;
+  }
+  #header, #content, #footer {
+    max-width: 1136px;
+  }
 }

@@ -20,7 +20,7 @@ $(window).load(function() {
 });
 
 function resize_body() {
-	if ($(window).width() > 480) {
+	if ($(window).width() > 480 && window.devicePixelRatio != 2) {
     $("input[name='mobile']").val("false");
     $("#navigation").find("ul").css("display", 'inline-block');
     $("#header").css("width", "");
